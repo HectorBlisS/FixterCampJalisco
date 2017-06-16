@@ -3,6 +3,7 @@ document.getElementById('saludo').innerHTML = "Kiubo?";
 $('#loader').fadeOut();
 
 
+<<<<<<< HEAD
 function Success(){
 	iziToast.success({
 		title:"Oswaldinho",
@@ -13,10 +14,25 @@ function getBooks(){
 	$.get('https://erik.fixter.org/products/', function(respuesta){
 		for(i=0;i<respuesta.length;i++){
 			$('#lista').append('<li>' + respuesta[i].name + '</li>')
+=======
+function pachurrado(){
+	iziToast.success({
+		title:"BlisS",
+		message: "Me pachurraste!"
+	});
+}
+
+function getBooks(){
+	$.get('https://erik.fixter.org/products/', function(respuesta){
+		// console.log(respuesta[1].name);
+		for(var i=0;i<respuesta.length;i++){
+			$('#lista').append('<li>'+respuesta[i].name+ '</li>');
+>>>>>>> 1763b8c90a6ea15f7fa5648c9339418605387680
 		}
 	});
 }
 
+<<<<<<< HEAD
 //Iniciamos con firebase
 
 function logIn(){
@@ -43,3 +59,10 @@ function logIn(){
 	  // ...
 	});
 }
+=======
+
+
+
+
+
+>>>>>>> 1763b8c90a6ea15f7fa5648c9339418605387680
