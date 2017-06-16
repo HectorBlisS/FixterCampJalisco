@@ -12,11 +12,38 @@
 		<img src="http://www.eyetique.com/skin/frontend/base/default/storelocator/images/loading/loading_big.gif">
 	</div>
 
+	<button onClick="logIn()">LogIn</button>
+	<h2 id="name"></h2>
+	<img id="img">
+
+	<ul id="lista"></ul>
+	<button onClick="getBooks()">Get Books</button>
+
 
 	<script src="../node_modules/jquery/dist/jquery.js"></script>	
 
 	<script src="../node_modules/izitoast/dist/js/iziToast.js"></script>
 
+	
+	<script src="../node_modules/firebase/firebase.js"></script>
+	
+
+	<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyBmwIa1Fnl5sQejOeG3jaxoF0zfJAiig_E",
+	    authDomain: "campjalisco.firebaseapp.com",
+	    databaseURL: "https://campjalisco.firebaseio.com",
+	    projectId: "campjalisco",
+	    storageBucket: "campjalisco.appspot.com",
+	    messagingSenderId: "1079502664926"
+	  };
+	  firebase.initializeApp(config);
+	</script>
+
+	
+
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
 	<script type="text/javascript" src="../src/index.js"></script>
 </body>
 </html>
